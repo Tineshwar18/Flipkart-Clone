@@ -1,0 +1,74 @@
+@media screen and (max-width:600px){
+    #headerBlock {
+        height: 140px;
+    }
+
+    #headerBlock article {
+        width: 100%;
+        display: block;
+    }
+
+    #headerBlock article .leftHeader {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #headerBlock article .rightHeader {
+        line-height: 18px;
+        margin: 7px 0px;
+    }
+    
+    .rightHeader nav>ul {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        padding: 0px 0px 10px;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    #barsBlock {
+        display: inline-block;
+        padding: 5px 12px;
+        color: #fff;
+        font-size: 25px;
+        position: absolute;
+        cursor: pointer;
+        right: 0px;
+    }
+
+    #mainMenuBlock {
+        height: 100%;
+        transform: translate(-600px);
+    }
+
+    #mainMenuBlock article {
+        width: 100%;
+    }
+
+    #MainMenu > ul {
+        display: block;
+        flex-direction: column;
+        height: auto;
+    }    
+
+    #MainMenu > ul > li {
+        width: 100%;
+    }
+
+    #MainMenu > ul > li > a {
+        width: 100%;
+        display: block;
+        padding: 13px 10px !important;
+    }
+
+    #bars:checked ~ #mainMenuBlock {
+        transform: translate(0px);
+        transition: ease all 0.7s;
+    }
+}

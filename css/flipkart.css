@@ -223,7 +223,7 @@ ul > li:hover ul {
     margin: 0 auto;
 }
 
-#MainMenu ul {
+#MainMenu > ul {
     display: flex;
     height: 40px;
     width: 100%;
@@ -259,6 +259,13 @@ ul > li:hover ul {
     opacity: 0.5;
 }
 
+#mainMenuBlock ul li:hover svg {
+    transform: rotate(90deg) !important;
+}
+
+#mainMenuBlock ul li:hover  path svg{
+    fill: #2874f0 !important;
+}
 /* dropdown mega menu css starts here */
 
 #MegaDropDownMenuBlock article {
@@ -281,6 +288,7 @@ ul > li:hover ul {
     flex-direction: column;
     align-items: flex-start !important;
     line-height: 27px;
+    list-style: none;
 }
 
 .megaMenuDiv ul li a {
@@ -325,15 +333,10 @@ ul > li:hover ul {
 
 #mainMenuBlock ul > li:hover #MegaDropDownMenuBlock article {
     display: flex;
-} 
-
-#mainMenuBlock ul li:hover ._34Yjv1 {
-    transform: rotate(90deg) !important;
-    -webkit-transform: rotate(90deg);
 }
 
-#mainMenuBlock ul li:hover ._34Yjv1 path {
-    fill: #2874f0 !important;
+#barsBlock {
+    display: none;
 }
 /* dropdown mega menu css ends here */
 /* main menu block css starts here */
