@@ -12,11 +12,18 @@ body {
     background-color: #e9e9e9;
 }
 
+.fixed {
+    position: relative;
+    padding-bottom: 56px;
+}
+
 #headerBlock {
     background-color: #2874f0;
     width: 100%;
     height: 56px;
-    /* position: fixed; */
+    position: fixed;
+    z-index: 2;
+    box-shadow: 0 2px 2.5px 0 rgba(0,0,0,.3);
 }
 
 #headerBlock article {
@@ -216,6 +223,7 @@ ul > li:hover ul {
     height: 40px;
     width: 100%;
     box-shadow: 1px 1px 1px 1px #ccc;
+    z-index: 10;
 }
 
 #mainMenuBlock article {
@@ -266,6 +274,8 @@ ul > li:hover ul {
 #mainMenuBlock ul li:hover  path svg{
     fill: #2874f0 !important;
 }
+/* main menu block css ends here */
+
 /* dropdown mega menu css starts here */
 
 #MegaDropDownMenuBlock article {
@@ -339,5 +349,358 @@ ul > li:hover ul {
     display: none;
 }
 /* dropdown mega menu css ends here */
-/* main menu block css starts here */
-/* main menu block css ends here */
+
+/* dealsBlock css starts here */
+
+#dealsBlock {
+    margin: 10px;
+    height: auto;
+    background-color: #e9e9e9;
+}
+
+#dealsBlock article {
+    display: flex;
+}
+
+.dealsLeftBlock {
+    flex: 6;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.dealsRightBlock {
+    flex: 1;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    margin: 0px 0px 0px 10px; 
+    padding: 4px;
+}
+
+.realme_block {
+    width: 230px;
+    height: 100%;
+}
+
+.dealsHeader {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dealsHeader h2 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.view_all_block a {
+    text-decoration: none;
+    background: #2874f0;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    border: none;
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+.timer-block {
+    display: flex;
+    position: relative;
+    left: -350px;
+    align-items: center;
+}
+
+.timer-img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.time {
+    font-size: 16px;
+    color: #7f7f7f;;
+}
+
+/* product-details css starts here */
+
+.dealsFooter {
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.product-details {
+    padding: 25px 15px;
+    width: 195px;
+    height: auto;
+}
+
+.product-details a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-image {
+    width: 165px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 15px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-offer {
+    font-size: 14px;
+    color: #388e3c;
+    padding-top: 8px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-desc {
+    font-size: 14px;
+    opacity: .6;
+    padding-top: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.product-image img:hover {
+    transform: scale(1.05);
+    transition: ease-in-out all 0.1s;
+}
+
+/* product-details css ends here */
+/* dealsBlock css ends here */
+
+/* banner block css starts here */
+
+#bannerBlock {
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner {
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,.08);
+    padding: 4px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* banner block css ends here */
+
+/* product block css starts here */
+.product-block {
+    padding: 0;
+    margin: 10px;
+    background-color: #fff;
+}
+
+.heading h2 {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.heading h3 {
+    font-size: 14px;
+    color: #b2b2b2;
+    font-weight: 400;
+}
+/* product block css ends here */
+ 
+/* footer block css starts here */
+/* top stories block starts here */
+#footerBlock {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    margin-top: 25px;
+}
+
+#topstoriesBlock {
+    padding: 25px;
+}
+
+.top-stories-head {
+    margin-top: 14px;
+    padding: 14px 0;
+}
+
+.top-stories-head span {
+    color: #848484;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.top-stories-head a {
+    color: #565656;
+    margin-left: 3px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.top-stories {
+    margin: 3px 0px;
+    text-align: left;
+}
+
+.top-stories-heading {
+    color: #848484;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: left;
+}
+
+.top-stories-description {
+    padding: 0px 5px 0px 0px;
+    border-right: 1px solid #333;
+    font-size: 12px;
+    text-decoration: none;
+    color: #565656;
+    text-align: left;
+}
+
+.top-stories-description:last-child {
+    border: none;    
+}
+/* top stories block ends here */
+
+/* One-stop block starts here */
+#one-stop-block {
+    clear: both;
+    line-height: 16px;
+    font-size: 11px;
+    padding: 25px;
+    color: #878787;
+    text-align: justify;
+}
+
+#one-stop-block h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #878787;
+}
+
+#one-stop-block h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #878787;
+}
+/* One-stop block ends here */
+
+/* bottom block css starts here */
+#bottomBlock {
+    background-color: #172337;
+    color: white;
+}
+
+.bottomHeader {
+    padding: 40px 65px 0px 65px;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.leftBottomHeader {
+    flex: 3;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.rightBottomHeader {
+    flex: 2;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.leftBottomHeader div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.bottomHead {
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+
+.leftBottomHeader div a {
+    font-size: 12px;
+    line-height: 2;
+    text-decoration: none;
+    color: white;
+}
+
+.rightBottomHeader div {
+    flex: 1;
+}
+
+.rightBottomHeader div p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+.address {
+    border-left: 1px solid #454d5e;
+    padding: 0px 25px;
+}
+
+.tel {
+    text-decoration: none;
+    color: #2874f0;
+}
+
+.bottomFooter {
+    border-top: 1px solid #454d5e;
+    padding: 25px 0;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bottomFooter a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.bottomFooter p {
+    color: white;
+    font-size: 14px;
+}
+.bottomImg {
+    margin-right: 8px;
+}
+/* bottom block css ends here */
+/* footer block css ends here */
