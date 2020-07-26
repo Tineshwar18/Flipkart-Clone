@@ -94,11 +94,11 @@ body {
     height: 35px;
     border-radius: 2px;
     border: 1px solid #eee;
+    padding: 0px 15px;
 }
 
 ::placeholder {
     text-transform: capitalize;
-    padding-left: 15px;
     font-weight: 500;
 }
 
